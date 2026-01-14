@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventario Tecnológico Roldán</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Estilos Propios-->
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body class="bg-bg min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="w-full bg-primary shadow-md fixed top-0 left-0 z-20 h-16 flex items-center px-4">
+        <div class="flex items-center gap-3">
+            <img src="./src/assets/images/logo.png" alt="Logo Empresa" class="h-10 w-10 object-contain rounded" />
+            <h1 class="text-xl font-bold text-bg">Inventario Tecnológico Roldán</h1>
+        </div>
+    </header>
+
+    <div class="flex flex-1 pt-16">
+        <!-- Sidebar -->
+        <aside
+            class="sidebar w-64 min-w-[200px] h-[calc(100vh-4rem)] shadow-md fixed top-16 left-0 z-10 hidden md:flex flex-col transition-all">
+            <nav class="flex-1 p-4">
+                <ul class="space-y-4">
+                    <li>
+                        <a href="#" class="flex items-center gap-3 text-bg hover:text-accent font-medium">
+                            <span class="material-icons">home</span>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./public/computers.html"
+                            class="flex items-center gap-3 text-bg hover:text-accent font-medium">
+                            <span class="material-icons">devices</span>
+                            <span>Equipos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./public/printers.html"
+                            class="flex items-center gap-3 text-bg hover:text-accent font-medium">
+                            <span class="material-icons">print</span>
+                            <span>Impresoras</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./public/phones.html"
+                            class="flex items-center gap-3 text-bg hover:text-accent font-medium">
+                            <span class="material-icons">call</span>
+                            <span>Telefonos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center gap-3 text-bg hover:text-accent font-medium">
+                            <span class="material-icons">bar_chart</span>
+                            <span>Reportes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center gap-3 text-bg hover:text-accent font-medium">
+                            <span class="material-icons">settings</span>
+                            <span>Configuración</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 ml-0 md:ml-64 p-4">
+            <div class="card min-h-[60vh]">
+                <h2 class="text-2xl font-semibold mb-4 text-primary">Bienvenido</h2>
+                <p class="text-dark">
+                    Esta es la plantilla base con Tailwind CSS, barra lateral, header y
+                    footer estáticos, y diseño responsive.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Sidebar para móviles -->
+	<nav class="md:hidden fixed bottom-14 left-0 w-full bg-primary shadow-t z-30 flex justify-around py-2 border-t">
+		<a href="#" class="flex flex-col items-center text-bg hover:text-accent">
+			<span class="material-icons">home</span>
+			<span class="text-xs">Inicio</span>
+		</a>
+		<a href="#" class="flex flex-col items-center text-bg hover:text-accent">
+			<span class="material-icons">devices</span>
+			<span class="text-xs">Equipos</span>
+		</a>
+        <a href="#" class="flex flex-col items-center text-bg hover:text-accent">
+            <span class="material-icons">print</span>
+            <span class="text-xs">Impresoras</span>
+        </a>
+        <a href="#" class="flex flex-col items-center text-bg hover:text-accent">
+            <span class="material-icons">call</span>
+            <span class="text-xs">Telefonos</span>
+        </a>
+		<a href="#" class="flex flex-col items-center text-bg hover:text-accent">
+			<span class="material-icons">bar_chart</span>
+			<span class="text-xs">Reportes</span>
+		</a>
+		<a href="#" class="flex flex-col items-center text-bg hover:text-accent">
+			<span class="material-icons">settings</span>
+			<span class="text-xs">Configuración</span>
+		</a>
+	</nav>
+
+    <!-- Footer -->
+	<footer class="w-full bg-primary shadow-inner h-14 flex items-center justify-center fixed bottom-0 left-0 z-20">
+		<span class="text-bg text-sm">&copy; 2025 Inventario Tecnológico Roldán</span>
+	</footer>
+
+	<!-- Google Material Icons para los íconos -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</body>
+
+</html>
